@@ -5,8 +5,10 @@ var http = require('http');
 
 
 var server = http.createServer(function(req,res){
+    //req = esta requisitando algo 
+    //.url é da onde está requisitando informação
     var categoria = req.url;
-    
+    //if para verificar qual pagina carregar quando tem uma req na url
     if(categoria == '/tecnologia'){
 
         res.end("<html><head><title>Curso de NodeJs</title></head><body><h1>Portal de Tecnologia com NodeJs</h1></body></html>");
